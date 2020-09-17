@@ -1,0 +1,24 @@
+{
+  "books": [
+    {
+      "title": "Eloquent JavaScript",
+      "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games.",
+      "id": 1
+    },
+    {
+      "title": "Speaking JavaScript",
+      "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you",
+      "id": 2
+    },
+    {
+      "title": "You Don't Know JS",
+      "description": "No matter how much experience you have with JavaScript, odds are you don’t fully understand the language.",
+      "id": 3
+    },
+    {
+      "title": "Harry Potter",
+      "description": "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.",
+      "id": 5
+    }
+  ]
+}
