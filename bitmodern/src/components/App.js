@@ -1,7 +1,8 @@
 import React from 'react';
 import { Router, Route } from 'react-router-dom';
 import BookList from '../components/books/BookList';
-import BookCreate from '../components/books/BookCreate';
+//import BookCreate from '../components/books/BookCreate';
+import BookCreate from '../components/books/BookComponent';
 import Header from './Header';
 import history from '../history';
 
