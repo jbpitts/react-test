@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class BookList extends React.Component {
 
     componentDidMount() {
-        this.props.fetchBooks();
+        this.props.fetch();
     }
 
     renderList() {
@@ -46,4 +46,11 @@ const mapStateToProps = (state) => {
     return { books: Object.values(state.books) };
 };
 
-export default connect(mapStateToProps, { fetchBooks })(BookList);
+const mapDispatchToProps = dispatch => {
+    return {
+        // dispatching plain actions
+        fetch: () => dispatch(fetchBooks()),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);

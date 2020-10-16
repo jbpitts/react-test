@@ -2,13 +2,15 @@ import angular from 'angular';
 import { angular2react } from 'angular2react';
 import { createBook } from '../../actions/index';
 import { connect } from 'react-redux';
+import {store} from "../../index";
 
 const MyComponent = {
   controller: ($scope, $timeout) => {
     $scope.updateBook = book => {
-      $timeout(function(){
-        $scope.$apply(`${createBook(book)};`);
-      });
+      // $timeout(function(){
+      //   $scope.$apply(`${createBook(book)};`);
+      // });
+      store.dispatch(createBook(book));
     }
   },
   template: `

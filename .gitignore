@@ -1,0 +1,4 @@
+node_modules/
+.idea/
+/bitmodern/node_modules/
+/api/node_modules/
